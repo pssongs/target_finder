@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>표적 찾기</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <h1 id="korean">표적 좌표 입력</h1>
+            <label class="label" for="keyInput"></label>
+            <div class="row">
+                <input
+                    type="text"
+                    id="keyInput"
+                    placeholder="e.g. BG 97651 89703"
+                    inputmode="text"
+                    autocomplete="off"
+                />
+                <button id="searchBtn" type="button">Search</button>
+            </div>
+            <div id="result" class="result"></div>
+        </section>
+    </main>
+ <script src="data.js"></script>
+ <script src="main.js"></script>
+</body>
+</html>
