@@ -12,9 +12,21 @@ const resultDiv = document.getElementById("result");
 const MY_LOCATION = "BG 90000 90000";
 const LOCATION_TWO = "BG 80000 80000";
 
-searchBtn.addEventListener("click", lookupValue);
+searchBtn.addEventListener("click", () => {
+  searchBtn.classList.add("pressed");
+  setTimeout(() => {
+    searchBtn.classList.remove("pressed");
+  }, 150);
+  lookupValue();
+});
 keyInput.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") lookupValue();
+  if (e.key === "Enter") {
+    searchBtn.classList.add("pressed");
+    setTimeout(() => {
+      searchBtn.classList.remove("pressed");
+    }, 150);
+    lookupValue();
+  }
 });
 
 /*
