@@ -50,6 +50,7 @@ body {
     cursor: pointer;
     transition: all 0.15s ease;
     border: 2px solid #e5e7eb;
+    border-color: #111827;
 }
 
 #searchBtn:hover {
